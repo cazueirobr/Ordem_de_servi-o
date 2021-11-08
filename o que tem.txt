@@ -1,0 +1,22 @@
+1 Função anônima com argumento
+2 Função anônima sem argumento
+3 Função anônima com retorno
+4 setInterval
+5 GetElementByID
+6 GetElementByName
+7 QuerySelector
+8 Função aninhada/local - declarar uma função dentro de outra
+9 Passagem de uma função como parâmetro
+10 Função Flecha - Arrow Function
+11 Função auto-executável
+12 Função com nome
+13 setTimeout
+14 alert
+15 Evento de movimento do mouse
+16 Evento de carregamento do documento - onload
+17 Usar laço de repetição (for..in ou for..of ou forEach)
+18 String Template
+19 3 manipulações de String
+20 Usar pelo menos 3 métodos de manipulação de array
+21 Usar pelo menos 3 métodos para manipulação de string
+22 confirm

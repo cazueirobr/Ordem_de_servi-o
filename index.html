@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Logar no sistema</title>
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+<script src="loginarea.js"></script>
+<form class="box" action='javascript:void(0);'>
+  <!--Evento de mouse abaixo-->
+  <center><img class="area" src="imagens/Cadeado_fechado.jpg" id="cadeado" onmouseover="open_padlock()" onmouseout="close_padlock()"></center> 
+  <h1>Login</h1>
+
+  <input type="text" name="username" id= "usuario" placeholder="Digite seu login">
+  <input type="password" name="senha" id="senha" placeholder="Senha">
+  <input type="submit" id="makelogin" value="Login" onclick="redirect(system_login)">
+  <input type="checkbox" onclick="showPassword()">
+          <span>Show password</span>
+  
+</form>
+
+
+  </body>
+</html>
