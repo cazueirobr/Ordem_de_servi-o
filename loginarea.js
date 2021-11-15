@@ -11,7 +11,7 @@ system_password = "teste"
 
 
 
-//Função para abrir o cadeado, que será chamada ao passar o mouse na imagem
+//Função para abrir o cadeado, que será chamada ao passar o mouse na imagem ele está no elemento HTML (Inline)
 function open_padlock(){
     var x = document.getElementById("cadeado").src; //GetelementbyID
     if(x = "imagens/Cadeado_fechado.jpg"){
@@ -30,7 +30,7 @@ function close_padlock(){
 //Função para capturar o login e senha e depois validala
 function system_login(){
     var user = document.getElementsByName("username")[0].value //getElementsByName
-    var password = document.getElementsByName("senha")[0].value
+    var password = document.getElementsByTagName("input")[1].value //getElementsBytagName
     //Comparando se os campos e o login definido "batem", retornara 1 para caso de certo e 0 para caso não seja semelhante
         if(user.toLowerCase() == system_user & password.toLowerCase() == system_password){ //2 manipulações de String
             return 1
@@ -53,14 +53,12 @@ function redirect(teste){ //Função recebendo outra função como argumento
         }
     }
 
+//Caso o usuario esqueça de digitar a senha, avise ele
+function passwordempty(){
+    var password = document.getElementsByTagName("input")[1].value
+    if(password == ''){
 
-//Função para mostrar a senha, ao clicar em um checkbox
-function showPassword() {
-    var x = document.getElementById("senha");
-    if (x.type == "password") {
-        x.type = "text";
+        alert("Você não digitou a senha!!")
     }
+
 }
-
-
-

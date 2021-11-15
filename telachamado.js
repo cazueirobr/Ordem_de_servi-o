@@ -1,7 +1,14 @@
 //Variaveis para definir o tempo de sessão
-let timer = new Date; //Definindo um ponteiro de data
+var timer = new Date; //Definindo um ponteiro de data
 var open_Session = timer.getMinutes(); //Pega o minuto atual
-var time_Up = 10 //tempo em minutos da sessão
+var time_Up = 2 //tempo em minutos da sessão
+
+
+function restart_session(){
+    aux = new Date
+    open_Session = aux.getMinutes()
+}
+
 
 
 //Função para calcular quando a sessão ira expirar
@@ -22,12 +29,24 @@ let session_time = function(start, end){ //Função anonima com parametro
 //Função para redirecionar o usuario apos expirar a sessão
 let time_up = function(){ //Função anonima sem parametro
     aux = new Date();
+    console.log(open_Session)
     if(aux.getMinutes() == session_time(open_Session, time_Up)){
-        clearInterval(session_state);
         window.location.href = "index.html";
 
     }
 
 }
+//Função para renovar a sessão a cada click do usuario
+window.onload = function(){
 
-session_state = setInterval(time_up,5000) //Executando verificação de tempo a cada 5 segundos
+   
+    document.onclick = function(){  //tratador de evento no modo tradicional
+        restart_session()
+        console.log(open_Session)
+
+    }
+}
+
+session_state = setInterval(time_up,60000) //Executando verificação de tempo a cada 60 segundos
+
+

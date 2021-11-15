@@ -48,3 +48,33 @@ function excluir(deletar) {
             }
 }
 
+addEventListener("keypress", function(e){ //função addEventListener
+
+    if(e.key == "Enter"){
+
+        
+
+        procurar = prompt("Digite o ID do chamado que você deseja procurar") //prompt
+        tickets.forEach(function(e, i){ //Usar laço de repetição (for..in ou for..of ou forEach)
+            /*Neste document.write temos: 
+            String Template
+            3 manipulações de String
+            */
+           if(e[0] == procurar){
+            document.write("<tr>",
+            `<td><a href=''><i class='fa fa-edit'></i></a> :: <a href=''><i class='fa fa-wrench' aria-hidden='true'></i></a> :: <a href=''><i class='fa fa-gavel' aria-hidden='true' onclick="excluir(${i})"></i></a></td>`,
+            `<th></th>`,
+            `<th>${e[0]}</th>`,
+            `<td>${e[1]}</td>`,
+            `<td>${e[2]}</td>`,
+            `<td>${e[3]}</td>`,
+            `<td>${e[4].charAt(0).toUpperCase() + e[4].slice(1)}</td>`,
+            `<td>${e[5]}</td>`,
+            "</tr>")
+           }
+            })
+       
+    }  
+
+})
+

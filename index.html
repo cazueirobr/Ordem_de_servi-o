@@ -8,18 +8,27 @@
   <body>
 <script src="loginarea.js"></script>
 <form class="box" action='javascript:void(0);'>
-  <!--Evento de mouse abaixo-->
+  <!--Evento de mouse abaixo inline"-->
   <center><img class="area" src="imagens/Cadeado_fechado.jpg" id="cadeado" onmouseover="open_padlock()" onmouseout="close_padlock()"></center> 
   <h1>Login</h1>
 
   <input type="text" name="username" id= "usuario" placeholder="Digite seu login">
-  <input type="password" name="senha" id="senha" placeholder="Senha">
+  <input type="password" name="senha" id="senha" placeholder="Senha" onblur="passwordempty()">
   <input type="submit" id="makelogin" value="Login" onclick="redirect(system_login)">
-  <input type="checkbox" onclick="showPassword()">
+  <input type="checkbox" id="mostrarsenha">
           <span>Show password</span>
   
 </form>
+<script>
+  //Função para mostrar a senha, ao clicar em um checkbox
+ mostrarsenha.onclick = function(){ //Via referência DOM pelo id do elemento HTML
+  
+  var x = document.getElementById("senha");
+  if (x.type == "password") {
+      x.type = "text";
+  }
 
+} </script>
 
   </body>
 </html>
