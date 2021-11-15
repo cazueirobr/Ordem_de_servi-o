@@ -1,6 +1,8 @@
 # Ordem_de_servi-o
 Projeto criado com o objetivo de fazer um mini sistema de ordem de serviço. Para a disciplina de Desenvolvimento Web 2 de TSI
 
+# Link para ver a apresentação
+https://drive.google.com/file/d/1OA5XM0u1vmhtk3BLfzRQjlCh-L9xRh4_/view?usp=sharing
 
 # Checkist
 
