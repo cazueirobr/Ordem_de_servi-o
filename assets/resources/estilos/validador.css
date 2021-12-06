@@ -1,0 +1,11 @@
+input:not(:placeholder-shown):invalid {
+  border: 1px solid red;
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+input:required:valid, input:valid{
+  border: 1px solid green;
+  background-position: right top;
+  background-repeat: no-repeat;
+
+}

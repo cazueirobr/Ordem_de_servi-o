@@ -1,0 +1,11 @@
+Style guide
+1 Strings
+2 Variaveis
+3 Blocos
+4 comentarios
+5 Espaços em branco
+6 Ponto e vírgula
+7 nomeclatura
+8 Casting & Coerção de tipos
+9 Vírgulas
+10 funções
