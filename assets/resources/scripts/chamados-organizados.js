@@ -17,7 +17,7 @@ tickets.sort(function(line1,line2) {
 
 tickets.forEach(function(e, i) {
   document.write('<tr>' + 
-    "<td><a href=''><i class='fa fa-edit'></i></a> :: <a href=''>" + 
+    "<td><a href=''><i class='fa fa-edit'></i></a> :: <a href=''>" +
     "<i class='fa fa-wrench' aria-hidden='true'></i></a> :: <a href=''>" +
     `<i class='fa fa-gavel' aria-hidden='true' onclick='excluir(${i})'>` + 
     '</i></a></td>' +

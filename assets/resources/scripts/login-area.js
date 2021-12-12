@@ -1,7 +1,10 @@
+
 //Logins e senhas definidas no sistema
-const systemUser = 'teste';
-const systemPassword = 'teste';
+const systemUser = ["teste", "teste","roni","javascript", "matheus","coxinha123"];
 'use strict';
+$('#usuario').val(localStorage.getItem('user'));
+
+
 
 //Função para criar uma chave de conexão, mais para frente pode ser utilizada para validar uma sessão
 ( function() {console.log(Math.floor(Math.random() * (99999999 - 23323232)) + 23323232);} )();//Função auto executavel
@@ -23,9 +26,17 @@ function closePadlock() {
 function systemLogin() {
   let user = document.getElementsByName('username')[0].value; //getElementsByName
   let password = document.getElementsByTagName('input')[1].value; //getElementsBytagName
+  let accept = 0;
   //Comparando se os campos e o login definido 'batem', retornara 1 para caso de certo e 0 para caso não seja semelhante
-    if (user.toLowerCase() == systemUser & password.toLowerCase() == systemPassword) return 1; //2 manipulações de String
-      return 0;
+  systemUser.forEach(function(e, i) {
+    if (i % 2 == 0 & user.toLowerCase() == e & password.toLowerCase() == systemUser[i + 1]){ 
+      accept = 1;
+      localStorage.user = e;
+    }; //2 manipulações de String
+
+  });
+    
+      return accept;
     }
 
 //Função para redirecionar o usuario caso o login esteja certo

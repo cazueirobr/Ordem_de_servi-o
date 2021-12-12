@@ -12,7 +12,3 @@ function selectValidation() {
   if (value == '') document.getElementById('tecnico').innerHTML = "Selecione um tecnico";
 
 }
-
-function cadastrar() {
-  alert('Chamado cadastrado!');
-}

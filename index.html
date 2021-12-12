@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="assets/resources/estilos/login.css">
   </head>
   <body>
-<script src="assets/resources/scripts/login-area.js"></script>
+
 <form class="box" action='javascript:void(0);'>
   <!--Evento de mouse abaixo inline"-->
   <center><img class="area" src="assets/resources/imagens/Cadeado_aberto.png" id="cadeado" onmouseover="openPadlock()" onmouseout="closePadlock()"></center> 
   <h1>Login</h1>
 
-  <input type="text" name="username" id= "usuario" placeholder="Digite seu login">
+  <input type="text" name="username" id= "usuario">
   <input type="password" name="senha" id="senha" placeholder="Senha" onblur="passwordEmpty()">
   <input type="submit" id="makelogin" value="Login" onclick="redirect(systemLogin)">
   <input type="checkbox" id="mostrarSenha">
@@ -29,6 +29,9 @@
   }
 
 } </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="assets/resources/scripts/login-area.js"></script>
 
   </body>
 </html>

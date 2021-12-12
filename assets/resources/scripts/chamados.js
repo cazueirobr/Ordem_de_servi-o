@@ -24,7 +24,7 @@ function callTickets() {
      */
   tickets.forEach(function(e, i) {
     document.write('<tr>' + 
-      "<td><a href=''><i class='fa fa-edit'></i></a> :: <a href=''>" + 
+      "<td><a href=''><i class='fa fa-edit'></i></a> :: <a href=''>" +
       "<i class='fa fa-wrench' aria-hidden='true'></i></a> :: <a href=''>" +
       `<i class='fa fa-gavel' aria-hidden='true' onclick='excluir(${i})'>` + 
       '</i></a></td>' +
@@ -38,6 +38,8 @@ function callTickets() {
       '</tr>');
       
       });
+      $('#linhastabela').addClass(localStorage.getItem('colorTheme'));
+      
 
 
 }
@@ -85,4 +87,13 @@ addEventListener('keypress', function(e) { //função addEventListener
 }  
 
 });
+
+$('#dropdowndonavbar2').click(function(){
+  $('#dropdown2options').slideToggle()
+  (1000);
+});
+//"max-width:200px; max-height:150px; width: auto; height: auto;"
+$('#logoutfpr').css("max-width","200px", "max-height","150px", "width", "auto", "height", "auto")
+
+
 

@@ -2,11 +2,12 @@
 let timer = new Date(); //Definindo um ponteiro de data
 let openSession = timer.getMinutes(); //Pega o minuto atual
 let timing =  1; //tempo em minutos da sessão
-
+let usuarioAtual = document.getElementById("usuario");
+usuarioAtual.innerHTML = `Loguin atual: ${localStorage.getItem("user")}!`;
 'use strict';
 
 function restartSession() {
-  let aux = new Date(); //No codigo anterior "Date;" no cidogo atual usando jshitn "Date();"
+  let aux = new Date(); //No codigo anterior "Date;" no codigo atual usando jshitn "Date();"
   openSession = aux.getMinutes();
 }
 

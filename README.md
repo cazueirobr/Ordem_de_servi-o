@@ -50,7 +50,7 @@ Tratadores de Evento
 - [x] Especificar o tratador de evento inline
 - [x] Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
 - [x] Especificar o tratador de evento no carregamento da página HTML com a função addEventListener
-- [ ] Usar o operador this em funções tratadoras de eventos.
+- [x] Usar o operador this em funções tratadoras de eventos.
 
 Objetos Nativos
 
@@ -88,3 +88,19 @@ Formulário
 - [ ] Manipulação de elemento de listagem, como checkbox, radio ou select
 - [x] Acesso aos elementos de um formulário via hierarquia (caminho) de objetos, ou seja, array forms e elements
 
+jQuery
+
+- [x] Uso de seletores CSS - id, classe e tag
+- [ ] Uso de seletores hierárquicos estáticos - ancestral/descendente, pai/filho, anterior/próximo
+- [ ] Uso de seletores hierárquicos dinâmicos - parent/children/next
+- [x] Efeitos fade ou slide
+- [x] Especificar o tratador de algum evento via jQuery
+- [x] Manipulação do CSS via função css() e addClass()/removeClass()
+- [x] Manipulação do conteúdo de um input e div usando jQuery
+- [x] Aplicar um plugin do jQuery (por exemplo, jQuery Mask Plugin)
+
+Web Storage
+
+- [x] LocalStorage ou SessionStorage
+- [x] Leitura e escrita de dados simples (tipos primitivos)
+- [] Leitura e escrita de JSON
