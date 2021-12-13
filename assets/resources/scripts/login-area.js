@@ -43,7 +43,7 @@ function systemLogin() {
 function redirect(teste){ //Função recebendo outra função como argumento
   let contador = 0;
   if (teste() == 1){ //Se o retorno da função for 1 o login está correto
-    window.location.href = './sistema/tela-chamado.html';
+    window.location.href = '/sistema/tela-chamado.html';
   }
   else{
       setTimeout(() => {alert('Login errado, tente novamente');}, 1000); //Função aninhada, função usando arrowfunction, setTimeout e alert
