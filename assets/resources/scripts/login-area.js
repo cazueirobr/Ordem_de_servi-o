@@ -2,7 +2,7 @@
 //Logins e senhas definidas no sistema
 const systemUser = ["teste", "teste","roni","javascript", "matheus","coxinha123"];
 'use strict';
-$('#usuario').val(localStorage.getItem('user'));
+$('#usuario').val(localStorage.getItem('user')); //Manipulação de input
 
 
 
@@ -13,13 +13,13 @@ $('#usuario').val(localStorage.getItem('user'));
 //Função para abrir o cadeado, que será chamada ao passar o mouse na imagem ele está no elemento HTML (Inline)
 function openPadlock() {
   let state = document.getElementById('cadeado').src; //GetelementbyID
-  if (state = 'assets/resources/imagens/Cadeado_fechado.jpg') document.getElementById('cadeado').src = 'assets/resources/imagens/Cadeado_aberto.png';
+  if (state = './assets/resources/imagens/Cadeado_fechado.jpg') document.getElementById('cadeado').src = 'assets/resources/imagens/Cadeado_aberto.png';
   
 }
 
 //Função para fechar o cadeado, que será chamada quando o mouse estiver fora da imagem
 function closePadlock() {
-  document.querySelector('img').src = 'assets/resources/imagens/Cadeado_fechado.jpg'; //QuerySelector
+  document.querySelector('img').src = './assets/resources/imagens/Cadeado_fechado.jpg'; //QuerySelector
 }
 
 //Função para capturar o login e senha e depois validala
@@ -43,7 +43,7 @@ function systemLogin() {
 function redirect(teste){ //Função recebendo outra função como argumento
   let contador = 0;
   if (teste() == 1){ //Se o retorno da função for 1 o login está correto
-    window.location.href = 'sistema/tela-chamado.html';
+    window.location.href = './sistema/tela-chamado.html';
   }
   else{
       setTimeout(() => {alert('Login errado, tente novamente');}, 1000); //Função aninhada, função usando arrowfunction, setTimeout e alert

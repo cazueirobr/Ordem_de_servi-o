@@ -6,6 +6,8 @@ let usuarioAtual = document.getElementById("usuario");
 usuarioAtual.innerHTML = `Loguin atual: ${localStorage.getItem("user")}!`;
 'use strict';
 
+
+
 function restartSession() {
   let aux = new Date(); //No codigo anterior "Date;" no codigo atual usando jshitn "Date();"
   openSession = aux.getMinutes();
