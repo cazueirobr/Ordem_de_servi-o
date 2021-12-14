@@ -2,7 +2,7 @@
 //Logins e senhas definidas no sistema
 const systemUser = ["teste", "teste","roni","javascript", "matheus","coxinha123"];
 'use strict';
-$('#usuario').val(localStorage.getItem('user')); //Manipulação de input
+$('#usuario').val(localStorage.getItem('user')); //Manipulação de conteudo input
 
 
 

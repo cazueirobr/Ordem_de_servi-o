@@ -15,46 +15,47 @@
 <header>
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-
-		<div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="tela-chamado.html"> home <i class="fas fa-home"></i><span class="sr-only"></span></a>
-				</li>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+  
+			<div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+			  <ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="cadastrar-chamado.html">Criar chamado <i class="fas fa-plus"></i> </a>
+				  <a class="nav-link" href="tela-chamado.html"> home <i class="fas fa-home"></i><span class="sr-only"></span></a>
 				</li>
-				<li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				Tipos de chamados
-			</a>
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item" href="">Abertos</a>
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="">Fechados</a>
+				<li class="nav-item">
+				  <a class="nav-link" href="cadastrar-chamado.html">Criar chamado <i class="fas fa-plus"></i> </a>
+				</li>
+					  <li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Tipos de chamados
+				  </a>
+				  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <a class="dropdown-item" href="">Abertos</a>
+					  <div class="dropdown-divider"></div>
+					  <a class="dropdown-item" href="">Fechados</a>
+				  </div>
+			  </li>
+			  <li class="nav-item">
+				  <a class="nav-link" href="clientes.html">Resgitrar cliente <i class="fab fa-creative-commons-by"></i> </a>
+			  </li>
+			  </ul>
+			  <ul class="navbar-nav mr-2">
+					  <li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="dropdowndonavbar2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span id='usuario'></span>
+				  </a>
+				  <div class="dropdown-menu" aria-labelledby="navbarDropdown" id='dropdown2options'>
+					  <a class="dropdown-item" href="/index.html" ><center>Logout <i class="fas fa-sign-out-alt"></i></center></a>
+					  <div class="dropdown-divider"></div>
+					  <a class="dropdown-item" href="tema.html"><center>Perfil  <i class="fas fa-user-edit"></i></center></a>
+				  </div>
+				  </li>
+			  </ul>
 			</div>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="">Resgitrar cliente <i class="fab fa-creative-commons-by"></i> </a>
-		</li>
-			</ul>
-			<ul class="navbar-nav mr-2">
-				<li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				Olá, usuario
-			</a>
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item" href="sair.php"><center>Logout <i class="fas fa-sign-out-alt"></i></center></a>
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="registrar.php"><center>Registrar <i class="fas fa-lock"></i></center></a>
-				<a class="dropdown-item" href="loginsenhaalt.php"><center>Usuarios  <i class="fas fa-user-edit"></i></center></a>
-			</div>
-			</ul>
-		</div>
-	</nav>
+		  </nav>
+
 
     <section>
 		<div id='selecione'>
@@ -73,10 +74,11 @@
 <footer>
 
 </footer>
-<script src="/assets/resources/scripts/tela-chamado.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/assets/resources/scripts/nav.js"></script>
+
 <script src="/assets/resources/js/popper.min.js"></script>
 <script src="/assets/resources/js/bootstrap.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="/assets/resources/scripts/selecionar-tema.js"></script>
 </body>
 

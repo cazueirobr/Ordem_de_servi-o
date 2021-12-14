@@ -1,13 +1,13 @@
 <!doctype html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<!-- Bootstrap -->
-<link rel="stylesheet" href="/assets/resources/estilos/css/bootstrap.css">
+	<script src="/assets/resources/js/jquery-1.11.3.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap /estilos/css/bootstrap.css-->
+	<link rel="stylesheet" href="/assets/resources/estilos/css/bootstrap.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 <!-- Bootstrap -->
-<link rel="stylesheet" href="css.css">
+
 
 <meta charset="UTF-8">
 <title>Criar chamado</title>
@@ -22,36 +22,35 @@
   
 			<div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
 			  <ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-				  <a class="nav-link" href="/sistema/tela-chamado.html"> home <i class="fas fa-home"></i><span class="sr-only"></span></a>
+				<li class="nav-item active">
+				  <a class="nav-link" href="tela-chamado.html"> home <i class="fas fa-home"></i><span class="sr-only"></span></a>
 				</li>
 				<li class="nav-item">
-				  <a class="nav-link" href="/sistema/cadastrar-chamado.html">Criar chamado <i class="fas fa-plus"></i> </a>
+				  <a class="nav-link" href="cadastrar-chamado.html">Criar chamado <i class="fas fa-plus"></i> </a>
 				</li>
 					  <li class="nav-item dropdown">
 				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					  Tipos de chamados
 				  </a>
 				  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					  <a class="dropdown-item" href="tela-chamado.html">Abertos</a>
+					  <a class="dropdown-item" href="">Abertos</a>
 					  <div class="dropdown-divider"></div>
-					  <a class="dropdown-item" href="telafechar.html">Fechados</a>
+					  <a class="dropdown-item" href="">Fechados</a>
 				  </div>
 			  </li>
-			  <li class="nav-item active">
+			  <li class="nav-item">
 				  <a class="nav-link" href="clientes.html">Resgitrar cliente <i class="fab fa-creative-commons-by"></i> </a>
 			  </li>
 			  </ul>
 			  <ul class="navbar-nav mr-2">
 					  <li class="nav-item dropdown">
-				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					  Olá, usuario
+				  <a class="nav-link dropdown-toggle" href="#" id="dropdowndonavbar2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span id='usuario'></span>
 				  </a>
-				  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					  <a class="dropdown-item" href="sair.html"><center>Logout <i class="fas fa-sign-out-alt"></i></center></a>
+				  <div class="dropdown-menu" aria-labelledby="navbarDropdown" id='dropdown2options'>
+					  <a class="dropdown-item" href="/index.html" ><center>Logout <i class="fas fa-sign-out-alt"></i></center></a>
 					  <div class="dropdown-divider"></div>
-					  <a class="dropdown-item" href="registrar.html"><center>Registrar <i class="fas fa-lock"></i></center></a>
-					  <a class="dropdown-item" href="loginsenhaalt.html"><center>Usuarios  <i class="fas fa-user-edit"></i></center></a>
+					  <a class="dropdown-item" href="tema.html"><center>Perfil  <i class="fas fa-user-edit"></i></center></a>
 				  </div>
 				  </li>
 			  </ul>
@@ -88,8 +87,9 @@
 		<div class="form-group col-md-2">
       <label for="inputCEP">CPF</label>
       <input type="text" class="form-control" id="cpf" name="cpfzao">
+	  
     </div>
-		<div class="form-group col-md-2">
+		<div class="form-group col-md-2" id='divtelefone'>
       <label for="inputCEP">Telefone</label>
       <input type="text" class="form-control" id="telefone" placeholder="(99)99999-9999" required name="telefone">
     </div>
@@ -99,11 +99,11 @@
 		</div>
 		<div class="form-group col-md-3">
     <label for="inputAddress">Cidade</label>
-    <input type="text" id="cidade" class="form-control" id="inputAddress" name="cidade">
+    <input type="text" id="cidade" class="form-control" id="inputAddress" name="cidade" readonly>
 	</div>
 	<div class="form-group col-md-3">
-		<label for="inputCity">Endereço</label>
-		<input type="text" class="form-control" id="endereco" placeholder="Rua dos Bobos" min=15 name="endereco">
+		<label for="inputCity" id="labeldeendereco">Endereço</label>
+		<input type="text" class="form-control" id="endereco" name="endereco" readonly>
 	</div>
 	<div class="form-group col-md-1">
 		<label for="inputCEP">nº:</label>
@@ -111,7 +111,7 @@
 	</div>
 	<div class="form-group col-md-2">
 		<label for="inputCEP">CEP</label>
-		<input type="text" class="form-control" id="cep" placeholder="00000-000" name="cep">
+		<input type="text" class="form-control" id="cep" placeholder="00000000000" name="cep" required>
 	</div>
   </div>
   <center><button type="submit" class="btn btn-primary">cadastrar</button></center>
@@ -125,10 +125,17 @@
 
 
 <footer>
-<script src="/assets/resources/scripts/cadastrar-cliente.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="/assets/resources/scripts/nav.js"></script>
+	<script src="/assets/resources/scripts/cadastrar-cliente.js"></script>
+	<script src="/assets/resources/js/popper.min.js"></script>
+	<script src="/assets/resources/js/bootstrap.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.11.2/jquery.mask.min.js"></script>
-<script>$('#cep').mask('000.000.000-00', {reverse: true});</script>
+<script>
+  $('#cep').mask('00000000', {reverse: true});
+  $('#telefone').mask('(00)000000000')
+</script>
 </footer>
 
 </body>

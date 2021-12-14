@@ -38,7 +38,8 @@ function callTickets() {
       '</tr>');
       
       });
-      $('#linhastabela').addClass(localStorage.getItem('colorTheme'));
+
+      $('#linhastabela').addClass(localStorage.getItem('colorTheme')); //addclass e menipulação de conteudo da div
       
 
 
@@ -88,11 +89,8 @@ addEventListener('keypress', function(e) { //função addEventListener
 
 });
 
-$('#dropdowndonavbar2').click(function(){
-  $('#dropdown2options').slideToggle()
-  (1000);
-});
-//"max-width:200px; max-height:150px; width: auto; height: auto;"
+
+//manipulação css
 $('#logoutfpr').css("max-width","200px", "max-height","150px", "width", "auto", "height", "auto")
 
 

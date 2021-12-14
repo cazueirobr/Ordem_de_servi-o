@@ -1,5 +1,5 @@
 
-
+'use strict'
 
 $('#temaazul').click(function(){
   localStorage.colorTheme = 'table table-primary table-hover';

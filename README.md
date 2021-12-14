@@ -2,7 +2,12 @@
 Projeto criado com o objetivo de fazer um mini sistema de ordem de serviço. Para a disciplina de Desenvolvimento Web 2 de TSI
 
 # Link para ver a apresentação
-https://drive.google.com/file/d/1ONLqTzjCAVNkCQAz35zN_viZvcYeDST-/view?usp=sharing
+Primeira apresentação: https://drive.google.com/file/d/1OA5XM0u1vmhtk3BLfzRQjlCh-L9xRh4_/view?usp=sharing
+Segunda apresentação: https://drive.google.com/file/d/1ONLqTzjCAVNkCQAz35zN_viZvcYeDST-/view?usp=sharing
+Terceira avaliação: https://drive.google.com/file/d/15BsgRzt48r9O2vngfOsiwzuH4oZRD0Pf/view?usp=sharing
+
+# Pages
+https://cazueirobr.github.io/Ordem_de_servi-o/
 
 # Checkist
 
@@ -91,7 +96,7 @@ Formulário
 jQuery
 
 - [x] Uso de seletores CSS - id, classe e tag
-- [ ] Uso de seletores hierárquicos estáticos - ancestral/descendente, pai/filho, anterior/próximo
+- [x] Uso de seletores hierárquicos estáticos - ancestral/descendente, pai/filho, anterior/próximo
 - [ ] Uso de seletores hierárquicos dinâmicos - parent/children/next
 - [x] Efeitos fade ou slide
 - [x] Especificar o tratador de algum evento via jQuery
@@ -103,4 +108,5 @@ Web Storage
 
 - [x] LocalStorage ou SessionStorage
 - [x] Leitura e escrita de dados simples (tipos primitivos)
-- [] Leitura e escrita de JSON
+- [x] Leitura e escrita de JSON
+- [x] Implementação funcional (basta fazer funcionar uma requisição) em AJAX para uma API de terceiros (ex.: buscaCEP, IBGE) ou para a sua própria API criada com ExpressJS na plataforma Node.
